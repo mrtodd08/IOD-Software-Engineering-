@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 1 Exercise 3</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        min-height: 100vh;
+        align-items: stretch;
+      }
+      .column {
+        background: goldenrod;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column" id="column1">
+        <h1 id="heading1">Jordan 1 UNC</h1>
+        <button onclick="changeMe()">Change Me</button>
+        <img
+          height="500"
+          width="500"
+          src="https://images.stockx.com/images/Air-Jordan-1-Retro-High-Off-White-University-Blue-Product.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1606321054"
+          alt="Jordan1"
+        />
+      </div>
+      <div class="column" id="column2">
+        <h1 id="heading2">Jordan 1 Off White</h1>
+        <button onclick="changeMe2()">Change Me</button>
+        <img
+          height="500"
+          width="500"
+          src="https://i.ebayimg.com/images/g/KjkAAOSwdjNiqlz8/s-l400.jpg"
+          alt="Jordan1"
+        />
+      </div>
+    </div>
+    <script>
+      function changeMe() {
+        alert("Change Me!");
+        document.getElementById("column1").style.backgroundColor = "green";
+      }
+    </script>
+    <script>
+      function changeMe2() {
+        alert("Change Me!");
+        document.getElementById("column2").style.backgroundColor = "blue";
+      }
+    </script>
+  </body>
+</html>
